@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{% if page.url != '/' %}{{ page.description | xml_escape }}{%else%}{{ site.description | xml_escape }}{% endif %}">
+    <link rel="shortcut icon" href="{{ '/favicon.ico' | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | prepend: site.baseurl }}">
     <title>{% if page.url != '/' %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   </head>
