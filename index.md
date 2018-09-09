@@ -6,6 +6,8 @@ title: Home
   <h1 class="display-4">{{ site.title }}</h1>
   <p class="lead">{{ site.description }}</p>
   <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In risus lectus, volutpat eget eros eu, pellentesque placerat odio.</p>
   <a class="btn btn-primary btn-lg" href="{{ '/about' | prepend: site.baseurl }}">Learn more</a>
 </div>
+
+Duis justo odio, accumsan non tortor sed, suscipit pretium dui. Etiam eros lectus, vehicula et mauris in, dapibus feugiat diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget lacinia elit. Proin placerat arcu et est suscipit, quis condimentum felis dictum. Nunc sollicitudin, dui sed cursus pharetra, elit dui luctus justo, non fermentum urna ex id diam. Etiam volutpat mattis odio et blandit. Quisque consectetur rutrum tristique. Nullam convallis tellus id bibendum rutrum. Duis placerat turpis lobortis massa convallis, id condimentum neque congue. Curabitur molestie fringilla est. Nulla ante magna, pharetra eu dui id, sodales consectetur tellus. Phasellus id efficitur enim. Cras finibus laoreet lorem.
