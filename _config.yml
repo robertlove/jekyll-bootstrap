@@ -2,8 +2,8 @@
 title: GitHub Pages
 email: your-email@example.com
 description: A starter Jekyll site for use with GitHub Pages. Includes Bootstrap baked right in.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/github-pages" # the subpath of your site, e.g. /blog
+url: "https://robertlove.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
