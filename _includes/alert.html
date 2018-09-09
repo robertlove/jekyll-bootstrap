@@ -1,0 +1,8 @@
+<div class="alert alert-{% if include.type %}{{ include.type }}{% else %}primary{% endif %}{% if include.dismissible %} alert-dismissible fade show{% endif %}" role="alert">
+  {{ include.content }}
+  {% if include.dismissible %}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  {% endif %}
+</div>
