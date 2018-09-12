@@ -11,3 +11,5 @@ title: Home
 </div>
 
 Duis justo odio, accumsan non tortor sed, suscipit pretium dui. Etiam eros lectus, vehicula et mauris in, dapibus feugiat diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget lacinia elit. Proin placerat arcu et est suscipit, quis condimentum felis dictum. Nunc sollicitudin, dui sed cursus pharetra, elit dui luctus justo, non fermentum urna ex id diam. Etiam volutpat mattis odio et blandit. Quisque consectetur rutrum tristique. Nullam convallis tellus id bibendum rutrum. Duis placerat turpis lobortis massa convallis, id condimentum neque congue. Curabitur molestie fringilla est. Nulla ante magna, pharetra eu dui id, sodales consectetur tellus. Phasellus id efficitur enim. Cras finibus laoreet lorem.
+
+{% include components/alert.html type="info" content="A simple info alert with <a href='#' class='alert-link'>an example link</a>. Give it a click if you like." dismissible="true" %}
