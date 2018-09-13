@@ -1,5 +1,14 @@
 ---
 title: Home
+breadcrumbs:
+  - name: Home
+    url: /
+  - name: Products
+    url: /products
+  - name: Widgets
+    url: /products/widgets
+  - name: Doohickeys
+    url: /products/widgets/doohickeys
 ---
 
 <div class="jumbotron">
@@ -23,4 +32,8 @@ Duis justo odio, accumsan non tortor sed, suscipit pretium dui. Etiam eros lectu
   color="info"
   pill="true"
   url="#"
+%}
+
+{% include components/breadcrumb.html
+  items=page.breadcrumbs
 %}
