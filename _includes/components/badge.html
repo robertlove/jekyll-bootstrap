@@ -1,15 +1,18 @@
+{% assign class = "badge" %}
+{% assign color = "primary" %}
+
 {% if include.color %}
   {% assign color = include.color %}
-{% else %}
-  {% assign color = "primary" %}
 {% endif %}
+
+{% assign class = class | append: " badge-" | append: color %}
+
 {% if include.pill == "true" %}
-  {% assign pill_class = " badge-pill" %}
-{% else %}
-  {% assign pill_class = "" %}
+  {% assign class = class | append: " badge-pill" %}
 {% endif %}
+
 {% if include.url %}
-  <a href="{{ include.url }}" class="badge badge-{{ color }}{{ pill_class }}">{{ include.content }}</a>
+  <a href="{{ include.url }}" class="{{ class }}">{{ include.content }}</a>
 {% else %}
-  <span class="badge badge-{{ color }}{{ pill_class }}">{{ include.content }}</span>
+  <span class="{{ class }}">{{ include.content }}</span>
 {% endif %}

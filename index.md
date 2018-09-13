@@ -30,10 +30,20 @@ Duis justo odio, accumsan non tortor sed, suscipit pretium dui. Etiam eros lectu
 {% include components/badge.html
   content="Badge"
   color="info"
-  pill="true"
+  pill="false"
   url="#"
 %}
 
 {% include components/breadcrumb.html
   items=page.breadcrumbs
+%}
+
+{% include components/button.html
+  content="Button"
+  color="info"
+  type="submit"
+  outline="true"
+  size="lg"
+  block="true"
+  state="active"
 %}
