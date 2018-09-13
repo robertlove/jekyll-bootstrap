@@ -1,0 +1,15 @@
+{% if include.color %}
+  {% assign color = include.color %}
+{% else %}
+  {% assign color = "primary" %}
+{% endif %}
+{% if include.pill == "true" %}
+  {% assign pill_class = " badge-pill" %}
+{% else %}
+  {% assign pill_class = "" %}
+{% endif %}
+{% if include.url %}
+  <a href="{{ include.url }}" class="badge badge-{{ color }}{{ pill_class }}">{{ include.content }}</a>
+{% else %}
+  <span class="badge badge-{{ color }}{{ pill_class }}">{{ include.content }}</span>
+{% endif %}
