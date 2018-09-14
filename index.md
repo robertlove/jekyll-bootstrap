@@ -1,14 +1,18 @@
 ---
 title: Home
-breadcrumbs:
+
+breadcrumb_items:
   - name: Home
     url: /
-  - name: Products
-    url: /products
-  - name: Widgets
-    url: /products/widgets
-  - name: Doohickeys
-    url: /products/widgets/doohickeys
+  - name: Library
+    url: /library
+  - name: Data
+    url: /library/data
+
+list_group:
+  - Cras justo odio
+  - Dapibus ac facilisis in
+  - Vestibulum at eros
 ---
 
 <div class="jumbotron">
@@ -35,7 +39,7 @@ Duis justo odio, accumsan non tortor sed, suscipit pretium dui. Etiam eros lectu
 %}
 
 {% include components/breadcrumb.html
-  items=page.breadcrumbs
+  items=page.breadcrumb_items
 %}
 
 {% include components/button.html
@@ -46,4 +50,23 @@ Duis justo odio, accumsan non tortor sed, suscipit pretium dui. Etiam eros lectu
   size="lg"
   block="true"
   state="active"
+%}
+
+{% include components/card.html
+  style="width: 20rem"
+  width="50"
+  text-align="center"
+  header="Card Header"
+  title="Card Title"
+  subtitle="Card subtitle"
+  text="Some quick example text to build on the card title and make up the bulk of the card's content."
+  link="#"
+  link-text="Card Link"
+  body="<p class='card-text'>This card has supporting text below as a natural lead-in to additional content.</p><p class='card-text'><small class='text-muted'>Last updated 3 mins ago</small></p>"
+  footer="Card Footer"
+  img-top="https://via.placeholder.com/350x150"
+  img-top-alt="Card Top Image"
+  img-bottom="https://via.placeholder.com/350x150"
+  img-bottom-alt="Card Bottom Image"
+  list-group=page.list_group
 %}

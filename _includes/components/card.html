@@ -1,0 +1,53 @@
+{% assign class = "card" %}
+{% assign style = "" %}
+
+{% if include.style %}
+  {% assign style = style | append: ' style="' | append: include.style | append: '"' %}
+{% endif %}
+
+{% if include.width %}
+  {% assign class = class | append: " w-" | append: include.width %}
+{% endif %}
+
+{% if include.text-align %}
+  {% assign class = class | append: " text-" | append: include.text-align %}
+{% endif %}
+
+<div class="{{ class }}"{{ style }}>
+  {% if include.header %}
+    <div class="card-header">{{ include.header }}</div>
+  {% endif %}
+  {% if include.img-top %}
+    <img class="card-img-top" src="{{ include.img-top }}" alt="{{ include.img-top-alt }}">
+  {% endif %}
+  {% if include.list-group %}
+    <ul class="list-group list-group-flush">
+      {% for item in include.list-group %}
+        <li class="list-group-item">{{ item }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  {% if include.body %}
+    <div class="card-body">
+      {% if include.title %}
+        <h5 class="card-title">{{ include.title }}</h5>
+      {% endif %}
+      {% if include.subtitle %}
+        <h6 class="card-subtitle mb-2 text-muted">{{ include.subtitle }}</h6>
+      {% endif %}
+      {% if include.text %}
+        <p class="card-text">{{ include.text }}</p>
+      {% endif %}
+      {{ include.body }}
+      {% if include.link %}
+        <a href="{{ include.link }}" class="card-link">{{ include.link-text }}</a>
+      {% endif %}
+    </div>
+  {% endif %}
+  {% if include.img-bottom %}
+    <img class="card-img-bottom" src="{{ include.img-bottom }}" alt="{{ include.img-bottom-alt }}">
+  {% endif %}
+  {% if include.footer %}
+    <div class="card-footer">{{ include.footer }}</div>
+  {% endif %}
+</div>

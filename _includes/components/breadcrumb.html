@@ -1,7 +1,7 @@
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     {% for item in include.items %}
-      {% if item.url == include.items.last.url || !item.url %}
+      {% if forloop.last == true %}
         <li class="breadcrumb-item active" aria-current="page">{{ item.name }}</li>
       {% else %}
         <li class="breadcrumb-item"><a href="{{ item.url | prepend: site.baseurl }}">{{ item.name }}</a></li>
