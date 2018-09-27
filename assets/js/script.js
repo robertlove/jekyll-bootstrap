@@ -1,6 +1,6 @@
 ---
 ---
 
-{% include_relative jquery.js %}
-{% include_relative popper.js %}
-{% include_relative bootstrap.js %}
+{% include_relative jquery.min.js %}
+{% include_relative popper.min.js %}
+{% include_relative bootstrap.min.js %}
