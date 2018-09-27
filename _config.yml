@@ -13,6 +13,9 @@ sass:
 
 # Exclude
 exclude:
+  - assets/js/bootstrap.js
+  - assets/js/jquery.js
+  - assets/js/popper.js
   - Gemfile
   - Gemfile.lock
   - LICENSE
