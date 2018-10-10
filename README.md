@@ -12,9 +12,9 @@ A Jekyll starter project for GitHub Pages with Bootstrap Sass baked right in.
 
 Before you begin, ensure you've installed [Jekyll](https://jekyllrb.com/). Then...
 
-1. `git clone https://github.com/robertlove/jekyll-bootstrap.git`
-1. `cd jekyll-bootstrap`
-1. `bundle install`
+1. `$ git clone https://github.com/robertlove/jekyll-bootstrap.git`
+1. `$ cd jekyll-bootstrap`
+1. `$ bundle install`
 1. `$ bundle exec jekyll serve`
 
 ## Usage
