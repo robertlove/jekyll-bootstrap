@@ -1,13 +1,24 @@
+{% assign prev = "Previous" %}
+{% assign next = "Next" %}
+
+{% if include.prev %}
+  {% assign prev = include.prev %}
+{% endif %}
+
+{% if include.next %}
+  {% assign next = include.next %}
+{% endif %}
+
 {% if paginator.total_pages > 1 %}
   <nav aria-label="Pagination">
     <ul class="pagination">
       {% if paginator.previous_page %}
         <li class="page-item">
-          <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}">Previous</a>
+          <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}">{{ include.prev }}</a>
         </li>
       {% else %}
         <li class="page-item disabled">
-          <span class="page-link" tabindex="-1">Previous</span>
+          <span class="page-link" tabindex="-1">{{ include.prev }}</span>
         </li>
       {% endif %}
       {% for page in (1..paginator.total_pages) %}
@@ -23,11 +34,11 @@
       {% endfor %}
       {% if paginator.next_page %}
         <li class="page-item">
-          <a class="page-link" href="{{ paginator.next_page_path | relative_url }}">Next</a>
+          <a class="page-link" href="{{ paginator.next_page_path | relative_url }}">{{ include.next }}</a>
         </li>
       {% else %}
         <li class="page-item disabled">
-          <span class="page-link" tabindex="-1">Next</span>
+          <span class="page-link" tabindex="-1">{{ include.next }}</span>
         </li>
       {% endif %}
     </ul>
