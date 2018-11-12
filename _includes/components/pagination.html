@@ -1,24 +1,33 @@
-{% assign prev = "Previous" %}
+{% assign previous = "Previous" %}
 {% assign next = "Next" %}
+{% assign class = "pagination" %}
 
-{% if include.prev %}
-  {% assign prev = include.prev %}
+{% if include.previous %}
+  {% assign previous = include.previous %}
 {% endif %}
 
 {% if include.next %}
   {% assign next = include.next %}
 {% endif %}
 
+{% if include.size %}
+  {% assign class = class | append: " pagination-" | append: include.size %}
+{% endif %}
+
+{% if include.align %}
+  {% assign class = class | append: " justify-content-" | append: include.align %}
+{% endif %}
+
 {% if paginator.total_pages > 1 %}
   <nav aria-label="Pagination">
-    <ul class="pagination">
+    <ul class="{{ class }}">
       {% if paginator.previous_page %}
         <li class="page-item">
-          <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}">{{ include.prev }}</a>
+          <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}">{{ previous }}</a>
         </li>
       {% else %}
         <li class="page-item disabled">
-          <span class="page-link" tabindex="-1">{{ include.prev }}</span>
+          <span class="page-link" tabindex="-1">{{ previous }}</span>
         </li>
       {% endif %}
       {% for page in (1..paginator.total_pages) %}
@@ -34,11 +43,11 @@
       {% endfor %}
       {% if paginator.next_page %}
         <li class="page-item">
-          <a class="page-link" href="{{ paginator.next_page_path | relative_url }}">{{ include.next }}</a>
+          <a class="page-link" href="{{ paginator.next_page_path | relative_url }}">{{ next }}</a>
         </li>
       {% else %}
         <li class="page-item disabled">
-          <span class="page-link" tabindex="-1">{{ include.next }}</span>
+          <span class="page-link" tabindex="-1">{{ next }}</span>
         </li>
       {% endif %}
     </ul>
