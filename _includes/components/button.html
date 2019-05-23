@@ -6,10 +6,10 @@
   {% assign color = include.color %}
 {% endif %}
 
-{% assign class = class | append: " btn-" | append: color %}
-
 {% if include.outline == "true" %}
   {% assign class = class | append: " btn-outline-" | append: color %}
+{% else %}
+  {% assign class = class | append: " btn-" | append: color %}
 {% endif %}
 
 {% if include.size %}
