@@ -6,6 +6,8 @@ A Jekyll starter project for GitHub Pages with Bootstrap Sass baked right in.
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Contributing](#contributing)
+- [Credits](#credits)
 - [License](#license)
 
 ## Installation
@@ -19,8 +21,17 @@ Before you begin, ensure you've installed [Jekyll](https://jekyllrb.com/). Then.
 
 ## Usage
 
-Open `_sass/_variables.scss` and start overriding [Bootstrap's variables](https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss) to customise the look and feel of your site.
+1. Open `_sass/_variables.scss`
+1. Start overriding [Bootstrap's variables](https://github.com/twbs/bootstrap/blob/master/scss/_variables.scss) to customise the look and feel of your site
+
+## Contributing
+
+See [Contributing](https://github.com/robertlove/.github/blob/master/CONTRIBUTING.md).
+
+## Credits
+
+See [Contributors](https://github.com/robertlove/jekyll-bootstrap/graphs/contributors).
 
 ## License
 
-https://github.com/robertlove/github-pages/blob/master/LICENSE
+See [LICENSE](LICENSE).
