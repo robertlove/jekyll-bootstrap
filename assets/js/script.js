@@ -1,4 +1,5 @@
 ---
+layout: null
 ---
 
 {% include_relative jquery.min.js %}
