@@ -2,11 +2,11 @@
 
 A Jekyll starter project for GitHub Pages with Bootstrap Sass baked right in.
 
-| Package   | Version |
-|-----------|---------|
-| Bootstrap | 4.3.1   |
-| jQuery    | 3.4.1   |
-| Popper    | 1.15.0  |
+
+![Jekyll](https://img.shields.io/badge/jekyll-v3.8.5-3F1F1F.svg)
+![Bootstrap](https://img.shields.io/badge/bootstrap-v4.3.1-563d7c.svg)
+![jQuery](https://img.shields.io/badge/jquery-v3.4.1-0769ad.svg)
+![Popper.js](https://img.shields.io/badge/popper-v1.15.0-21b2a6.svg)
 
 ## Table of Contents
 
