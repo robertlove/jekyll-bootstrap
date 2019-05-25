@@ -1,6 +1,6 @@
 # Jekyll/Bootstrap
 
-A Jekyll starter project for GitHub Pages with Bootstrap Sass baked right in.
+A Jekyll starter project for GitHub Pages with Bootstrap baked right in.
 
 
 ![Jekyll](https://img.shields.io/badge/jekyll-v3.8.5-3F1F1F.svg)
