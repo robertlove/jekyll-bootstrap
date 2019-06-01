@@ -9,10 +9,30 @@
     <title>{% if page.url != '/' %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   </head>
   <body>
-    {% include header.html %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            {% for item in site.data.navigation %}
+              <li class="nav-item{% if page.url == item.url %} active{% endif %}">
+                <a class="nav-link" href="{{ item.url | prepend: site.baseurl }}">{{ item.name }}{% if page.url == item.url %} <span class="sr-only">(current)</span>{% endif %}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="container my-5">
       {{ content }}
     </div>
-    {% include footer.html %}
+    <div class="container my-5 text-center small">
+      <hr>
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+    </div>
+    <script src="{{ '/assets/js/script.js' | prepend: site.baseurl }}"></script>
   </body>
 </html>
