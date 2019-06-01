@@ -1,6 +1,17 @@
-- name: Home
+- title: Home
   url: /
-- name: About
-  url: /about
-- name: Contact
-  url: /contact
+- title: Link
+  url: "/#"
+- title: Dropdown
+  url: "/#"
+  items:
+    - title: Action
+      url: /about#action
+    - title: Another action
+      url: /about#another-action
+    - divider: true
+    - title: Something else here
+      url: /about#something-else-here
+- title: Disabled
+  url: "/#"
+  disabled: true

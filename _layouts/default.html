@@ -18,9 +18,24 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             {% for item in site.data.navigation %}
-              <li class="nav-item{% if page.url == item.url %} active{% endif %}">
-                <a class="nav-link" href="{{ item.url | prepend: site.baseurl }}">{{ item.name }}{% if page.url == item.url %} <span class="sr-only">(current)</span>{% endif %}</a>
-              </li>
+              {% if item.items %}
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle{% if page.url == item.url %} active{% endif %}{% if item.disabled %} disabled{% endif %}" href="{{ item.url | prepend: site.baseurl }}" id="navbarDropdown{{ forloop.index }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}{% if page.url == item.url %} <span class="sr-only">(current)</span>{% endif %}</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown{{ forloop.index }}">
+                    {% for item in item.items %}
+                      {% if item.divider %}
+                        <div class="dropdown-divider"></div>
+                      {% else %}
+                        <a class="dropdown-item{% if page.url == item.url %} active{% endif %}{% if item.disabled %} disabled{% endif %}" href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                </li>
+              {% else %}
+                <li class="nav-item">
+                  <a class="nav-link{% if page.url == item.url %} active{% endif %}{% if item.disabled %} disabled{% endif %}" href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}{% if page.url == item.url %} <span class="sr-only">(current)</span>{% endif %}</a>
+                </li>
+              {% endif %}
             {% endfor %}
           </ul>
         </div>
