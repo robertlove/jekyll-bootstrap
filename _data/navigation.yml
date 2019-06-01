@@ -1,17 +1,17 @@
 - title: Home
   url: /
-- title: Link
-  url: "/#"
-- title: Examples
-  url: "/examples"
+- title: About
+  url: /about
   items:
-    - title: Action
-      url: /examples#action
-    - title: Another action
-      url: /examples#another-action
+    - title: Leadership
+      url: /about#leadership
+    - title: Board of Directors
+      url: /about#directors
     - divider: true
-    - title: Something else here
-      url: /examples#something-else-here
-- title: Disabled
+    - title: Careers
+      url: /about#careers
+- title: Pricing
   url: "/#"
   disabled: true
+- title: Contact
+  url: /contact
