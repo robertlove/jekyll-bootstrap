@@ -2,16 +2,16 @@
   url: /
 - title: Link
   url: "/#"
-- title: Dropdown
-  url: "/#"
+- title: Examples
+  url: "/examples"
   items:
     - title: Action
-      url: /about#action
+      url: /examples#action
     - title: Another action
-      url: /about#another-action
+      url: /examples#another-action
     - divider: true
     - title: Something else here
-      url: /about#something-else-here
+      url: /examples#something-else-here
 - title: Disabled
   url: "/#"
   disabled: true
