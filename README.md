@@ -1,7 +1,6 @@
 # Jekyll/Bootstrap
 
-A Jekyll starter project for GitHub Pages with Bootstrap baked right in.
-
+A Jekyll starter project for GitHub Pages with Bootstrap 4.3.1 baked right in!
 
 ![Jekyll](https://img.shields.io/badge/jekyll-v3.8.5-3F1F1F.svg)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-v4.3.1-563d7c.svg)
@@ -18,7 +17,7 @@ A Jekyll starter project for GitHub Pages with Bootstrap baked right in.
 
 ## Installation
 
-Before you begin, ensure you've installed [Jekyll](https://jekyllrb.com/). Then...
+Before you begin, ensure you've installed [Jekyll](https://jekyllrb.com/). Then:
 
 1. `$ git clone https://github.com/robertlove/jekyll-bootstrap.git`
 1. `$ cd jekyll-bootstrap`

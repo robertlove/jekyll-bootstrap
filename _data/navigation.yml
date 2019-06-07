@@ -1,6 +1,17 @@
-- name: Home
+- title: Home
   url: /
-- name: About
+- title: About
   url: /about
-- name: Contact
+  items:
+    - title: Leadership
+      url: /about#leadership
+    - title: Board of Directors
+      url: /about#directors
+    - divider: true
+    - title: Careers
+      url: /about#careers
+- title: Pricing
+  url: "/#"
+  disabled: true
+- title: Contact
   url: /contact
