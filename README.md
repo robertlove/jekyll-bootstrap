@@ -34,7 +34,7 @@ If all went well, you'll be able to view your new Jekyll/Bootstrap website local
 
 ### Configuration
 
-The first thing you'll want to do is open `_config.yml` and update the `title`, `description`, `baseurl` and `url` configuration options. Remember that configuration changes require you to rerun `$ bundle exec jekyll serve` in order for the changes to take effect.
+The first thing you'll want to do is open [`_config.yml`](_config.yml) and update the `title`, `description`, `baseurl` and `url` configuration options. Remember that configuration changes require you to rerun `$ bundle exec jekyll serve` in order for the changes to take effect.
 
 For a full list of configuration options, see [Jekyll Configuration](https://jekyllrb.com/docs/configuration/).
 
@@ -45,8 +45,8 @@ One of the biggest criticisms of Bootstrap is that it makes your website look li
 The process is:
 
 1. Use Bootstrap components and classes in your HTML - there are many (and many utility classes are undocumented)
-1. Override and extend Bootstrap's default variables in `_sass/_variables.scss`
-1. Write custom styles in `assets/css/style.css`
+1. Override and extend Bootstrap's default variables in [`_sass/_variables.scss`](_sass/_variables.scss)
+1. Write custom styles in [`assets/css/style.css`](assets/css/style.scss)
 
 Done correctly, you'll likely never get to step 3. If you do get to step 3, before continuing, have another think about the way you're architecting your front-end.
 
