@@ -44,13 +44,38 @@ One of the biggest criticisms of Bootstrap is that it makes your website look li
 
 The process is:
 
-1. Use Bootstrap components and classes in your HTML - there are many (and many utility classes are undocumented)
+1. Use Bootstrap components and classes in your HTML - there are many (and many utility are undocumented)
 1. Override and extend Bootstrap's default variables in [`_sass/_variables.scss`](_sass/_variables.scss)
 1. Write custom styles in [`assets/css/style.css`](assets/css/style.scss)
+1. Write custom scripts in [`assets/js/script.js`](assets/js/script.js)
 
-Done correctly, you'll likely never get to step 3. If you do get to step 3, before continuing, have another think about the way you're architecting your front-end.
+For a full list of classes - including the undocumented ones, see [Bootstrap CSS](https://github.com/twbs/bootstrap/blob/master/dist/css/bootstrap.css)
 
 For a full list of variables, see [Bootstrap SCSS Variables](https://github.com/twbs/bootstrap/blob/master/scss/_variables.scss).
+
+**Note:** Done correctly, you'll likely never get to steps 3 and 4. If you do, before continuing, have another think about the way you're architecting your front-end.
+
+### Using Third-party Libraries
+
+Sometimes you'll want to use third-party libraries to achieve the results you're after. For example, you might want to use [Prism](https://prismjs.com/) for syntax highlighting or [Moment.js](https://momentjs.com/) for displaying dates and times in JavaScript.
+
+To use a third-party library:
+
+#### Styles
+
+1. Copy any `*.css` or `*.scss` files to the [`_sass`](_sass) folder
+1. Rename any `*.css` files to `*.scss` (e.g. rename `prism.css` to `prism.scss`)
+1. Open [`assets/css/style.css`](assets/css/style.scss) and import your SCSS file(s) (e.g. `@import "path/to/prism";` - leaving pot the `.scss` file extension)
+
+This will compile and minify all styles into `_site/assets/css/style.css`.
+
+#### Scripts
+
+1. Copy any `*.js` files to the [`assets/js`](assets/js) folder
+1. Open [`assets/js/script.js`](assets/js/script.js) and import your JavaScript file(s) (e.g. `{% include_relative path/to/prism.js %}`)
+1. Open [`_config.yml`](_config.yml) and add your JavaScript file(s) to the list of excludes under `exclude:` (e.g. `  - assets/js/path/to/prism.js`)
+
+This will compile (but not minify) all scripts into `_site/assets/js/script.js`. Jekyll doesn't support minification of JavaScript files on GitHub Pages. If you want your scripts to be minified, use the minified versions supplied by the third-party library.
 
 ## Contributing
 
