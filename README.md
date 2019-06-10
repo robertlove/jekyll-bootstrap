@@ -7,9 +7,9 @@
 
 Jekyll/Bootstrap is a Jekyll starter project for GitHub Pages with Bootstrap baked right in.
 
-[Jekyll](https://jekyllrb.com/) is a static website generator that works seamlessly with [GitHub Pages](https://pages.github.com/). Whilst [Bootstrap](https://getbootstrap.com/) is the world's most popular front-end component library. Put this all together and you get a fast, secure and highly customisable static website with free hosting.
-
 Jekyll/Bootstrap solves the confusing task of integrating Bootstrap with Jekyll by doing the integration for you - *the right way* - then guiding you through the simple process of customising Bootstrap - *the right way*.
+
+[Jekyll](https://jekyllrb.com/) is a static website generator that works seamlessly with [GitHub Pages](https://pages.github.com/). Whilst [Bootstrap](https://getbootstrap.com/) is the world's most popular front-end component library. Put this all together and you get a fast, secure and highly customisable static website with free hosting.
 
 ## Table of Contents
 
