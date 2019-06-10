@@ -65,7 +65,7 @@ To use a third-party library:
 
 1. Copy any `*.css` or `*.scss` files to the [`_sass`](_sass) folder
 1. Rename any `*.css` files to `*.scss` (e.g. rename `prism.css` to `prism.scss`)
-1. Open [`assets/css/style.css`](assets/css/style.scss) and import your SCSS file(s) (e.g. `@import "path/to/prism";` - leaving pot the `.scss` file extension)
+1. Open [`assets/css/style.css`](assets/css/style.scss) and import your SCSS file(s) (e.g. `@import "path/to/prism";` - leaving out the `.scss` file extension)
 
 This will compile and minify all styles into `_site/assets/css/style.css`.
 
