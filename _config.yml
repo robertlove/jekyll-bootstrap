@@ -3,6 +3,7 @@ title: Jekyll/Bootstrap
 description: A Jekyll starter project for GitHub Pages with Bootstrap baked right in.
 baseurl: "/jekyll-bootstrap" # the subpath of your site, e.g. /blog
 url: "https://robertlove.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter: robert_love
 
 # Build settings
 markdown: kramdown
