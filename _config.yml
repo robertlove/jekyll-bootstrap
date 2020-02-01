@@ -19,8 +19,9 @@ defaults:
     values:
       layout: default
 
-plugins:
-  - jekyll-seo-tag
+# Plugins
+# plugins:
+#   - jekyll-seo-tag
 
 # Exclude
 exclude:

@@ -1,6 +1,6 @@
 # Jekyll/Bootstrap
 
-![Jekyll](https://img.shields.io/badge/jekyll-v4.0.0-3F1F1F.svg)
+![Jekyll](https://img.shields.io/badge/jekyll-v3.8.5-3F1F1F.svg)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-v4.4.1-563d7c.svg)
 ![jQuery](https://img.shields.io/badge/jquery-v3.4.1-0769ad.svg)
 ![Popper.js](https://img.shields.io/badge/popper-v1.16.1-21b2a6.svg)
