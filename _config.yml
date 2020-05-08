@@ -19,10 +19,6 @@ defaults:
     values:
       layout: default
 
-# Plugins
-# plugins:
-#   - jekyll-seo-tag
-
 # Exclude
 exclude:
   - assets/js/bootstrap.min.js

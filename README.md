@@ -1,9 +1,9 @@
 # Jekyll/Bootstrap
 
-![Jekyll](https://img.shields.io/badge/jekyll-v3.8.5-3F1F1F.svg)
+![Jekyll](https://img.shields.io/badge/jekyll-v4.0.0-3F1F1F.svg)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-v4.4.1-563d7c.svg)
-![jQuery](https://img.shields.io/badge/jquery-v3.4.1-0769ad.svg)
-![Popper.js](https://img.shields.io/badge/popper-v1.16.1-21b2a6.svg)
+![jQuery](https://img.shields.io/badge/jquery-v3.5.1-0769ad.svg)
+![Popper.js](https://img.shields.io/badge/popper-v2.4.0-21b2a6.svg)
 
 Jekyll/Bootstrap is a Jekyll starter project for GitHub Pages with Bootstrap baked right in.
 
@@ -34,7 +34,16 @@ If all went well, you'll be able to view your new Jekyll/Bootstrap website local
 
 ### Configuration
 
-The first thing you'll want to do is open [`_config.yml`](_config.yml) and update the `title`, `description`, `baseurl` and `url` configuration options. Remember that configuration changes require you to rerun `$ bundle exec jekyll serve` in order for the changes to take effect.
+1. Open [`_config.yml`](_config.yml) and update the following configuration options:
+  1. `title`
+  1. `description`
+  1. `baseurl`
+  1. `url`
+  1. `twitter`
+1. Replace `/favicon.ico` with your own favicon
+1. Replace `/assets/img/social.jpg` with your own social image
+
+**Note:** Changes to `_config.yml` require you to rerun `$ bundle exec jekyll serve` in order for the changes to take effect.
 
 For a full list of configuration options, see [Jekyll Configuration](https://jekyllrb.com/docs/configuration/).
 
@@ -44,8 +53,8 @@ One of the biggest criticisms of Bootstrap is that it makes your website look li
 
 The process is:
 
-1. Use Bootstrap components and classes in your HTML - there are many (and many utility are undocumented)
-1. Override and extend Bootstrap's default variables in [`_sass/_variables.scss`](_sass/_variables.scss)
+1. Use Bootstrap components and classes in your HTML - there are many (and many utility classes are undocumented)
+1. Override Bootstrap's default variables in [`_sass/_variables.scss`](_sass/_variables.scss)
 1. Write custom styles in [`assets/css/style.css`](assets/css/style.scss)
 1. Write custom scripts in [`assets/js/script.js`](assets/js/script.js)
 
