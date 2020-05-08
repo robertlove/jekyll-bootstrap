@@ -34,14 +34,14 @@ If all went well, you'll be able to view your new Jekyll/Bootstrap website local
 
 ### Configuration
 
-1. Open [`_config.yml`](_config.yml) and update the following configuration options:
-  1. `title`
-  1. `description`
-  1. `baseurl`
-  1. `url`
-  1. `twitter`
-1. Replace `/favicon.ico` with your own favicon
-1. Replace `/assets/img/social.jpg` with your own social image
+- Open [`_config.yml`](_config.yml) and update the following configuration options:
+  - `title`
+  - `description`
+  - `baseurl`
+  - `url`
+  - `twitter`
+- Replace `/favicon.ico` with your own favicon
+- Replace `/assets/img/social.jpg` with your own social image
 
 **Note:** Changes to `_config.yml` require you to rerun `$ bundle exec jekyll serve` in order for the changes to take effect.
 
