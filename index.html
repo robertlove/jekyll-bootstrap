@@ -2,26 +2,29 @@
 title: Home
 ---
 
-<div class="jumbotron">
-  <h1 class="display-4">{{ site.title }}</h1>
-  <p class="lead">{{ site.description }}</p>
-  <hr class="my-4">
-  <p>{{ site.title }} solves the confusing task of integrating Bootstrap with Jekyll by doing the integration for you - <i>the right way</i>.</p>
-  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal">Learn more</button>
+<div class="bg-light bg-gradient py-3 py-md-4 py-lg-5">
+  <div class="container">
+    <h1 class="display-4">{{ site.title }}</h1>
+    <p class="lead">{{ site.description }}</p>
+    <hr class="my-4">
+    <p>{{ site.title }} solves the confusing task of integrating Bootstrap with Jekyll by doing the integration for you - <i>the right way</i>.</p>
+    <div class="d-grid gap-2 d-md-block">
+      <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modal">Learn more</button>
+      <a href="https://github.com/robertlove/jekyll-bootstrap" class="btn btn-outline-dark" target="_blank">View on GitHub</a>
+    </div>
+  </div>
 </div>
-<div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+<div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal-title">Learn more</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <h5 class="modal-title" id="modal-label">Learn more</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">Want all the gory details? Head over to the <a href="https://github.com/robertlove/jekyll-bootstrap">{{ site.title }} GitHub repository</a> to get up and running in no time flat.</div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">No thanks</button>
-        <a class="btn btn-success" href="https://github.com/robertlove/jekyll-bootstrap">Go to GitHub</a>
+        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">No thanks</button>
+        <a class="btn btn-success" href="https://github.com/robertlove/jekyll-bootstrap">View on GitHub</a>
       </div>
     </div>
   </div>

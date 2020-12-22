@@ -1,9 +1,7 @@
 # Jekyll/Bootstrap
 
 ![Jekyll](https://img.shields.io/badge/jekyll-v3.9.0-3F1F1F.svg)
-![Bootstrap](https://img.shields.io/badge/bootstrap-v4.5.3-563d7c.svg)
-![jQuery](https://img.shields.io/badge/jquery-v3.5.1-0769ad.svg)
-![Popper.js](https://img.shields.io/badge/popper-v2.5.3-21b2a6.svg)
+![Bootstrap](https://img.shields.io/badge/bootstrap-v5.0.0-beta1-563d7c.svg)
 
 Jekyll/Bootstrap is a Jekyll starter project for GitHub Pages with Bootstrap baked right in.
 
@@ -41,7 +39,7 @@ If all went well, you'll be able to view your new Jekyll/Bootstrap website local
   - `url`
   - `twitter`
 - Replace `/favicon.ico` with your own favicon
-- Replace `/assets/img/social.jpg` with your own social image
+- Replace `/assets/img/image.jpg` with your own image
 
 **Note:** Changes to `_config.yml` require you to rerun `$ bundle exec jekyll serve` in order for the changes to take effect.
 

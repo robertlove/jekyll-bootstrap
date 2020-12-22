@@ -1,7 +1,7 @@
 {%- assign url = '/' | prepend: site.baseurl | prepend: site.url -%}
 {%- assign title = site.title -%}
 {%- assign description = site.description -%}
-{%- assign image = '/assets/img/social.jpg' | prepend: site.baseurl | prepend: site.url -%}
+{%- assign image = '/assets/img/image.jpg' | prepend: site.baseurl | prepend: site.url -%}
 
 {%- if page.url != '/' -%}
   {%- if page.url -%}
@@ -19,7 +19,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="{{ title | xml_escape }}">
     <meta name="description" content="{{ description | xml_escape }}">
     <meta name="image" content="{{ image }}">
@@ -44,17 +44,15 @@
     <title>{{ title }}</title>
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-dark">
+    <header class="navbar navbar-light bg-white border-bottom shadow-sm">
       <div class="container">
         <a class="navbar-brand" href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a>
       </div>
-    </nav>
-    <main class="container my-3 my-sm-4 my-md-5">
-      {{ content }}
-    </main>
-    <footer class="navbar fixed-bottom navbar-light bg-light">
+    </header>
+    {{ content }}
+    <footer class="navbar navbar-light bg-light bg-gradient fixed-bottom">
       <div class="container">
-        <span class="navbar-text small">&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</span>
+        <p class="m-0"><small>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</small></p>
       </div>
     </footer>
     <script src="{{ '/assets/js/script.js' | prepend: site.baseurl }}"></script>
