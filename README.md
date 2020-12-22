@@ -1,7 +1,7 @@
 # Jekyll/Bootstrap
 
 ![Jekyll](https://img.shields.io/badge/jekyll-v3.9.0-3F1F1F.svg)
-![Bootstrap](https://img.shields.io/badge/bootstrap-v5.0.0-beta1-563d7c.svg)
+![Bootstrap](https://img.shields.io/badge/bootstrap-v5.0.0-563d7c.svg)
 
 Jekyll/Bootstrap is a Jekyll starter project for GitHub Pages with Bootstrap baked right in.
 
