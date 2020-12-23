@@ -1,0 +1,3 @@
+{%- if include.name -%}
+  <svg class="bi{% if include.class %} {{ include.class }}{% endif %}"><use xlink:href="{{ '/assets/img/bootstrap-icons.svg' | prepend: site.baseurl }}#{{- include.name -}}"/></svg>
+{%- endif -%}

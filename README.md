@@ -1,7 +1,8 @@
 # Jekyll/Bootstrap
 
-![Jekyll](https://img.shields.io/badge/jekyll-v3.9.0-2b2b2b.svg)
-![Bootstrap](https://img.shields.io/badge/bootstrap-v5.0.0-7952b3.svg)
+![Jekyll](https://img.shields.io/badge/Jekyll-v3.9.0-red.svg)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-v5.0.0-blueviolet.svg)
+![Bootstrap Icons](https://img.shields.io/badge/Bootstrap%20Icons-v1.2.0-blueviolet)
 
 Jekyll/Bootstrap is a Jekyll starter project for GitHub Pages with Bootstrap baked right in.
 
@@ -61,6 +62,14 @@ For a full list of classes - including the undocumented ones, see [Bootstrap CSS
 For a full list of variables, see [Bootstrap SCSS Variables](https://github.com/twbs/bootstrap/blob/master/scss/_variables.scss).
 
 **Note:** Done correctly, you'll likely never get to steps 3 and 4. If you do, before continuing, have another think about the way you're architecting your front-end.
+
+### Icons
+
+Jekyll/Bootstrap comes with [Bootstrap Icons](https://icons.getbootstrap.com/) pre-installed. Use the icon include for all your icon needs. The `name` parameter is used to specify the icon and is required. The `class` parameter is used to add any additional classes for styling and is optional.
+
+```
+{% include icon.html name='github' class='text-danger' %}
+```
 
 ### Using Third-party Libraries
 

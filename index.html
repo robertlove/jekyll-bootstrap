@@ -9,8 +9,14 @@ title: Home
     <hr class="my-4">
     <p>{{ site.title }} solves the confusing task of integrating Bootstrap with Jekyll by doing the integration for you - <i>the right way</i>.</p>
     <div class="d-grid gap-2 d-md-block">
-      <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modal">Learn more</button>
-      <a href="https://github.com/robertlove/jekyll-bootstrap" class="btn btn-outline-dark" target="_blank">View on GitHub</a>
+      <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modal">
+        {% include icon.html name='info-circle-fill' %}
+        Learn more
+      </button>
+      <a href="https://github.com/robertlove/jekyll-bootstrap" class="btn btn-outline-dark" target="_blank">
+        {% include icon.html name='github' %}
+        View on GitHub
+      </a>
     </div>
   </div>
 </div>
@@ -23,8 +29,14 @@ title: Home
       </div>
       <div class="modal-body">Want all the gory details? Head over to the <a href="https://github.com/robertlove/jekyll-bootstrap">{{ site.title }} GitHub repository</a> to get up and running in no time flat.</div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">No thanks</button>
-        <a class="btn btn-success" href="https://github.com/robertlove/jekyll-bootstrap">View on GitHub</a>
+        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">
+          {% include icon.html name='hand-thumbs-down' %}
+          No thanks
+        </button>
+        <a class="btn btn-success" href="https://github.com/robertlove/jekyll-bootstrap">
+          {% include icon.html name='github' %}
+          View on GitHub
+        </a>
       </div>
     </div>
   </div>
